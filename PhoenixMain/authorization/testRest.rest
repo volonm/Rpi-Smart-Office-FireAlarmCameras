@@ -1,0 +1,45 @@
+
+###
+POST http://127.0.0.1:8000/auth/createUser
+Content-Type: application/json
+
+{"username":"Charlie","email": "charlie@gmail.com","password": "charlie"}
+
+###
+
+POST http://127.0.0.1:8000/auth/login
+Content-Type: application/json
+
+{"username": "grot","password": "123"}
+
+
+###
+
+GET http://127.0.0.1:8000/auth/tokenTest
+Content-Type: application/json
+Authorization: Token da367b88d5a9f37633b2c239e25a8a2bc6d22869
+
+###
+
+POST http://127.0.0.1:8000/auth/send_em
+Content-Type: application/json
+Authorization: Token 58825ad47db2068e8f7697ae505703cf9cc1a16f
+
+
+###
+
+POST http://127.0.0.1:8000/auth/verify
+Content-Type: application/json
+Authorization: Token 58825ad47db2068e8f7697ae505703cf9cc1a16f
+
+{"code": "AJawxN"}
+
+
+###
+
+GET http://127.0.0.1:8000/auth/getUserByToken
+Content-Type: application/json
+Authorization: Token 58825ad47db2068e8f7697ae505703cf9cc1a16f
+Session: Token 5951f40695ac8c1bff56cf24de2dacb1c3cb4b3e1d5478c17876b50c06f887b8
+
+
