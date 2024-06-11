@@ -38,7 +38,7 @@ To make setup easy for you to get started with main module, here's a list of nex
 ## Clone the Project to your Pi
 
 ```
-git clone https://gitlab.utwente.nl/computer-systems-project/2023-2024/student-projects/cs23-35/cs23-35-main.git
+git clone https://github.com/volonm/Rpi-Smart-Office-FireAlarmCameras.git
 ```
 Alternatively, If something is wrong with `git clone` due to gitlab permissions, download zip of the project and transport it on your pi.
 
